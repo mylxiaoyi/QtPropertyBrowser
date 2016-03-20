@@ -20,8 +20,8 @@ ENDFOREACH()
 #-----------------------------------------------------------------------------
 # Qt
 #
-FIND_PACKAGE(Qt4 4.7 REQUIRED)
-INCLUDE(${QT_USE_FILE})
+FIND_PACKAGE(Qt5 REQUIRED COMPONENTS Widgets)
+INCLUDE_DIRECTORIES(${Qt5Widgets_INCLUDE_DIRS})
 
 #-----------------------------------------------------------------------------
 # Subdirectories
