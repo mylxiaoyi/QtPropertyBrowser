@@ -21,7 +21,7 @@ SET(KIT_MOC_CPP)
 FOREACH(file ${KIT_CPP_MOC_SRCS})
   get_filename_component(filename_we ${file} NAME_WE)
   SET(output_file ${filename_we}.moc)
-  QT4_GENERATE_MOC(${file} ${output_file})
+  QT5_GENERATE_MOC(${file} ${output_file})
   LIST(APPEND KIT_MOC_CPP ${output_file})
 ENDFOREACH()
 
