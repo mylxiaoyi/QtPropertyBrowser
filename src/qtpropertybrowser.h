@@ -48,7 +48,8 @@
 QT_BEGIN_NAMESPACE
 #endif
 
-#if defined(Q_WS_WIN)
+//#if defined(Q_WS_WIN)
+#ifdef _MSC_VER
 #  if defined(QtPropertyBrowser_EXPORTS)
 #    define QT_QTPROPERTYBROWSER_EXPORT
 #  else
@@ -56,7 +57,8 @@ QT_BEGIN_NAMESPACE
 #  endif
 #endif
 
-#if defined(Q_WS_WIN)
+//#if defined(Q_WS_WIN)
+#ifdef _MSC_VER
 #  if !defined(QT_QTPROPERTYBROWSER_EXPORT) && !defined(QT_QTPROPERTYBROWSER_IMPORT)
 #    define QT_QTPROPERTYBROWSER_EXPORT
 #  elif defined(QT_QTPROPERTYBROWSER_IMPORT)
